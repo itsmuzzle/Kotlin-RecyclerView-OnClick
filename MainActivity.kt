@@ -1,10 +1,9 @@
-class Activity: Adapter.yourClickListener
+class Activity: Adapter.myClickListener
 {
     override fun doSomething()
     {
         toast("Hey! Implement me!")
     }
-
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -18,7 +17,7 @@ class Activity: Adapter.yourClickListener
         val layoutManager = LinearLayoutManager(this)
         recycler_view.layoutManager = layoutManager
 
-        /* The Custom Adapter for the RecyclerView*/
+        /* The Custom Adapter for the RecyclerView */
         val adapter = Adapter(context, items, layout, this)    
         recycler_view.adapter = adapter
     }
